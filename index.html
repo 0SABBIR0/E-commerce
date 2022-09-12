@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rasel's Shop</title>
+    <!--Font-awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+        <div class="container">
+            <a href="index.html" class="navbar-brand d-flex justify-content-between align-items-center order-lg-0">
+                <img src="#" alt=""><span class="text-uppercase fw-lighter ms-2">Rasel's</span>
+            </a>
+            <div class="order-lg-2 nav-btns ">
+                <button type="button" class="btn position-relative">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">5</span>
+                </button>
+                <button type="button" class="btn position-relative">
+                    <i class="fa fa-heart"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">2</span>
+                </button>
+                <button type="button" class="btn position-relative">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item px-2 py-2">
+                        <a href="#header" class="nav-link text-uppercase text-dark">home</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a href="#header" class="nav-link text-uppercase text-dark">Collection</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a href="#header" class="nav-link text-uppercase text-dark">popular</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a href="#header" class="nav-link text-uppercase text-dark">Blog</a>
+                    </li>
+                    <li class="nav-item px-2 py-2 border-0">
+                        <a href="#header" class="nav-link text-uppercase text-dark">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--End Of Navigation bar-->
+
+    <!--header-->
+    <header id="header" class="vh-100 carousel slide" data-bs-ride="carousel" style="padding-top:104px">
+        <div class="container h-100 d-flex align-items-center carousel-inner">
+            <div class="text-center carousel-item active">
+                <h2 class="text-capitalize text-white">best Collection</h2>
+                <h1 class="text-uppercase py-2 fw-bold text-white">New Arrivals</h1>
+                <a href="#" class="btn mt-3 text-uppercase">Shop Now</a>
+            </div>
+            <div class="text-center carousel-item">
+                <h2 class="text-capitalize text-white">best Price and offer</h2>
+                <h1 class="text-uppercase py-2 fw-bold text-white">New Season0</h1>
+                <a href="#" class="btn mt-3 text-uppercase">buy Now</a>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#header" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#header" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </header>
+    <!--End of Header-->
+    <!--Collection-->
+    <div id="collection" class="py-5">
+        <div class="container">
+            <div class="title text-center">
+                <h2 class="position-relative d-inline-block">New Collection</h2>
+            </div>
+            <div class="row g-0">
+                <div class="d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+                    <button type="button" class="btn m-2 text-dark active-filter-btn" data-filter="*">All</button>
+                    <button type="button" class="btn m-2 text-dark" data-filter=".cloth">Clothing</button>
+                    <button type="button" class="btn m-2 text-dark" data-filter=".electro">Electronics</button>
+                    <button type="button" class="btn m-2 text-dark" data-filter=".access">Accessories</button>
+                    <button type="button" class="btn m-2 text-dark" data-filter=".mobi">Mobile</button>
+                </div>
+                <div class="collection-list mt-4 row gx-0 gy-3">
+                    <!--Product 1-->
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 electro">
+                        <div class="collection-img position-relative">
+                            <img src="./img/elec14.jpg" alt="#" class="w-100">
+                           <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Gray Shirt</p>
+                            <span class="fw-bold">$55.00</span>
+                        </div>
+                    </div>
+                    <!--Product 2-->
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 electro">
+                        <div class="collection-img position-relative">
+                            <img src="./img/elec1.jpg" alt="#" class="w-100">
+                           <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Gray Shirt</p>
+                            <span class="fw-bold">$55.00</span>
+                        </div>
+                    </div>
+                    <!--Product 3-->
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 electro">
+                        <div class="collection-img position-relative">
+                            <img src="./img/elec2.jpg" alt="#" class="w-100">
+                           <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Gray Shirt</p>
+                            <span class="fw-bold">$55.00</span>
+                        </div>
+                    </div>
+                    <!--Product 4-->
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 access">
+                        <div class="collection-img position-relative">
+                            <img src="./img/elec3.jpeg" alt="#" class="w-100">
+                           <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Gray Shirt</p>
+                            <span class="fw-bold">$55.00</span>
+                        </div>
+                    </div>
+                    <!--Product 5-->
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 access">
+                        <div class="collection-img position-relative">
+                            <img src="./img/elec5.jpg" alt="#" class="w-100">
+                           <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">End</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Gray Shirt</p>
+                            <span class="fw-bold">$55.00</span>
+                        </div>
+                    </div>
+                    <!--Product 6-->
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 access">
+                        <div class="collection-img position-relative">
+                            <img src="./img/elec6.jpg" alt="#" class="w-100">
+                           <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Gray Shirt</p>
+                            <span class="fw-bold">$55.00</span>
+                        </div>
+                    </div>
+                    <!--Product 7-->
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 mobi">
+                        <div class="collection-img position-relative">
+                            <img src="./img/elec7.jpg" alt="#" class="w-100">
+                           <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Gray Shirt</p>
+                            <span class="fw-bold">$55.00</span>
+                        </div>
+                    </div>
+                    <!--product 8-->
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 mobi">
+                        <div class="collection-img position-relative">
+                            <img src="./img/elec8.jpg" alt="#" class="w-100">
+                           <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">End</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Gray Shirt</p>
+                            <span class="fw-bold">$55.00</span>
+                        </div>
+                    </div>
+                    <!--Product 9-->
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 cloth">
+                        <div class="collection-img position-relative">
+                            <img src="./img/elec10.jpg" alt="#" class="w-100">
+                           <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">End</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Gray Shirt</p>
+                            <span class="fw-bold">$55.00</span>
+                        </div>
+                    </div>
+                    <!--Product 10-->
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 cloth">
+                        <div class="collection-img position-relative">
+                            <img src="./img/elec11.jpg" alt="#" class="w-100">
+                           <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Gray Shirt</p>
+                            <span class="fw-bold">$55.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--JQuery-->
+    <script src="./js/jquery-3.6.1.js"></script>
+    <!--ISOTOPE CDN-->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script> 
+    <!--Bootstrap js-->
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <!--Custom Js-->
+    <script src="./js/apps.js"></script>
+</body>
+</html>

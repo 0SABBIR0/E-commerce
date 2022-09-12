@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500;600&display=swap');
+:root{
+    --lg-font: 'Kaisei Tokumin', serif;
+    --sm-font: 'Poppins', sans-serif;
+    --pink:#e5345b;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--sm-font);
+}
+.bg-primary{
+    background-color: var(--pink) !important ;
+}
+.navbar{
+    box-shadow: 0 3px 9px 3px rgba(0,0,0,0.1);
+}
+.navbar-brand img{
+    width: 30px;
+}
+.navbar-brand span{
+    letter-spacing: 2px;
+    font-family: var(--lg-font);
+}
+.nav-link:hover{
+    color: var(--pink) !important;
+}
+.nav-item{
+    border-bottom:0.5px solid rgba(0,0,0,0.05);
+}
+#header{
+    background: url(./img/slider-img.png) top/cover no-repeat;
+}
+.btn:not(.nav-btns button){
+    background-color: #fff ;
+    color: rgb(85,85,85);
+    padding: 10px 28px;
+    border-radius: 25px;
+    border:1px solid rgb(85,85,85);
+}
+.btn:not(.nav-btns button):hover{
+    background-color: var(--pink);
+    color: #fff;
+    border-color:var(--pink) ;
+}
+.carousel-inner h1{
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+.carousel-item .btn{
+    border-color: #fff !important; 
+}
+.carousel-item .btn:hover{
+    color: var(--pink);
+}
+/*Collection title*/
+.title h2::before{
+    position: absolute;
+    content: '';
+    width: 5px;
+    height: 50px;
+    background-color: var(--pink);
+    left: -10%;
+}
+/*Collection button*/
+.active-filter-btn{
+    background-color:var(--pink) !important;
+    color: #fff !important;
+    border-color:var(--pink) !important;
+} 
+
+.collection-img span{
+    top: 20px;
+    right: 20px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+.text-primary{
+    color: var(--pink) !important;
+}
+.collection-img img{
+    width: 100%;
+    height: 320px;
+}
+.filter-button-group .btn:hover{
+    color: #fff !important;
+}
+
+/*Media Queries*/
+@media(min-width:992px){
+    .nav-item{
+        border-bottom: none;
+    }
+}

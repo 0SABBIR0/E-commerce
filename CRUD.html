@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rasel's Shop</title>
+    <!--Font-awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+
+</head>
+<body>
+    <section>
+        <div class="container mt-5">
+            <div class="text-center">
+                <div class="display-5 mb-5">
+                    <h1>Dashboard</h1>
+                </div>
+                <div class="main row justify-content-center">
+                    <form action="" id="Product-form" class="row justify-content-center mb-4" autocomplete="off">
+                        <div class="col-10 mb-3">
+                            <label for="productName">Product Name</label>
+                            <input type="text" class="form-control" id="productName" placeholder="Enter Product Name">
+                        </div>
+                        <div class="col-10 mb-3">
+                            <label for="productPrice">Product Price</label>
+                            <input type="number" class="form-control" id="productPrice" placeholder="Enter Product Price">
+                        </div>
+                        <div class="col-10 mb-3">
+                            <label for="productCatagory">Select Catagory</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Catagories</option>
+                                <option value="1">Clothing</option>
+                                <option value="2">Electronics</option>
+                                <option value="3">Accessories</option>
+                                <option value="3">Mobile</option>
+                              </select>
+                        </div>
+                        <div class="col-10 mb-3">
+                            <div class="mb-3">
+                                <label for="formFile" class="form-label">Choose File</label>
+                                <input class="form-control" type="file" id="formFile">
+                              </div>
+                        </div>
+                        <div class="col-10">
+                            <input class="btn"type="submit" value="Submit">
+                        </div>
+                    </form>
+                    <!-- <div class="col-10 mt-5">
+                        <table class="table table-striped table-dark">
+                            <thead>
+                                <tr>
+                                    <th>Product Name</th>
+                                    <th>Product Price</th>
+                                    <th>Product Image</th>
+                                    <th>action</th>
+                                </tr>
+                                <tr>
+                                    <td>Product 1</td>
+                                    <td>1000</td>
+                                    <td><img src="./img/elec10.jpg" style="width: 120px;"></td>
+                                    <td>
+                                        <a href="#" class="btn btn-sm edit">Edit</a>
+                                        <a href="#" class="btn btn-sm edit">Delete</a>
+                                    </td>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div> -->
+                    <div class="container">
+                        <div class="row">
+                          <div class="col-10">
+                              <table class="table table-image">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">NO:</th>
+                                    <th scope="col">Image</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Catagory</th>
+                                    <th scope="col">Action</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>
+                                        <img src="./img/elec10.jpg" class="img-fluid img-thumbnail table_img" alt="Sheep">
+                                    </td>
+                                    <td>Bootstrap </td>
+                                    <td>913</td>
+                                    <td>Electronics</td>
+                                    <td>
+                                        <a href="#" class=" btn_2">Edit</a>
+                                        <a href="#" class=" btn_2">Delete</a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+                                    <td>
+                                        <img src="./img/elec13.jpg" class="img-fluid img-thumbnail table_img" alt="Sheep">
+                                    </td>
+                                    <td>Bootstrap </td>
+                                    <td>1.434</td>
+                                    <td>Electronics</td>
+                                    <td>
+                                        <a href="#" class=" btn_2">Edit</a>
+                                        <a href="#" class=" btn_2">Delete</a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+                                    <td>
+                                        <img src="./img/elec13.jpg" class="img-fluid img-thumbnail table_img" alt="Sheep">
+                                    </td>
+                                    <td>Bootstrap </td>
+                                    <td>1.434</td>
+                                    <td>Electronics</td>
+                                    <td>
+                                        <a href="#" class=" btn_2">Edit</a>
+                                        <a href="#" class=" btn_2">Delete</a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+                                    <td>
+                                        <img src="./img/elec13.jpg" class="img-fluid img-thumbnail table_img" alt="Sheep">
+                                    </td>
+                                    <td>Bootstrap </td>
+                                    <td>1.434</td>
+                                    <td>Electronics</td>
+                                    <td>
+                                        <a href="#" class=" btn_2">Edit</a>
+                                        <a href="#" class=" btn_2">Delete</a>
+                                    </td>
+                                  </tr>
+                                  <tr class="back">
+                                    <th scope="row">2</th>
+                                    <td>
+                                        <img src="./img/elec13.jpg" class="img-fluid img-thumbnail table_img" alt="Sheep">
+                                    </td>
+                                    <td>Bootstrap </td>
+                                    <td>1.434</td>
+                                    <td>Electronics</td>
+                                    <td>
+                                        <a href="#" class=" btn_2">Edit</a>
+                                        <a href="#" class=" btn_2">Delete</a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+                                    <td>
+                                        <img src="./img/elec13.jpg" class="img-fluid img-thumbnail table_img" alt="Sheep">
+                                    </td>
+                                    <td>Bootstrap </td>
+                                    <td>1.434</td>
+                                    <td>Electronics</td>
+                                    <td>
+                                        <a href="#" class=" btn_2">Edit</a>
+                                        <a href="#" class=" btn_2">Delete</a>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>   
+                          </div>
+                        </div>
+                      </div> 
+                      <div class="clearfix mb-5">
+                        <div class="hint-text">showing <span>5</span> of <span>100</span> entries</div>
+                        <ul class="pagination">
+                            <li class="page-item"><a href="#">Previous</a></li>
+                            <li class="page-item"><a href="#" class="page-link">1</a></li>
+                            <li class="page-item"><a href="#" class="page-link">2</a></li>
+                            <li class="page-item active"><a href="#" class="page-link">3</a></li>
+                            <li class="page-item"><a href="#" class="page-link">4</a></li>
+                            <li class="page-item"><a href="#" class="page-link">5</a></li>
+                            <li class="page-item"><a href="#">Next</a></li>
+
+                        </ul>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!--JQuery-->
+    <script src="./js/jquery-3.6.1.js"></script>
+    <!--ISOTOPE CDN-->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script> 
+    <!--Bootstrap js-->
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <!--Custom Js-->
+    <script src="./js/apps.js"></script>
+</body>
+</html>
